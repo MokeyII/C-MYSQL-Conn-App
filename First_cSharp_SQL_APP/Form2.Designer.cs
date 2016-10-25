@@ -36,8 +36,8 @@
             this.Ban_txt = new System.Windows.Forms.TextBox();
             this.Reason_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Submit_btn = new System.Windows.Forms.Button();
+            this.Proof_txt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -81,7 +81,7 @@
             // 
             // GUID_txt
             // 
-            this.GUID_txt.Location = new System.Drawing.Point(68, 12);
+            this.GUID_txt.Location = new System.Drawing.Point(69, 8);
             this.GUID_txt.Name = "GUID_txt";
             this.GUID_txt.Size = new System.Drawing.Size(250, 20);
             this.GUID_txt.TabIndex = 4;
@@ -111,23 +111,23 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "-1 = Permanant Ban (all bans should fall under this category)";
             // 
-            // button1
+            // Submit_btn
             // 
-            this.button1.Location = new System.Drawing.Point(334, 319);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Submit_btn.Location = new System.Drawing.Point(334, 319);
+            this.Submit_btn.Name = "Submit_btn";
+            this.Submit_btn.Size = new System.Drawing.Size(75, 23);
+            this.Submit_btn.TabIndex = 9;
+            this.Submit_btn.Text = "Submit";
+            this.Submit_btn.UseVisualStyleBackColor = true;
+            this.Submit_btn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // Proof_txt
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 151);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 162);
-            this.textBox1.TabIndex = 10;
+            this.Proof_txt.Location = new System.Drawing.Point(69, 151);
+            this.Proof_txt.Multiline = true;
+            this.Proof_txt.Name = "Proof_txt";
+            this.Proof_txt.Size = new System.Drawing.Size(326, 162);
+            this.Proof_txt.TabIndex = 10;
             // 
             // label5
             // 
@@ -145,8 +145,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 354);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Proof_txt);
+            this.Controls.Add(this.Submit_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Reason_txt);
             this.Controls.Add(this.Ban_txt);
@@ -172,8 +172,8 @@
         private System.Windows.Forms.TextBox Ban_txt;
         private System.Windows.Forms.TextBox Reason_txt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Submit_btn;
+        private System.Windows.Forms.TextBox Proof_txt;
         private System.Windows.Forms.Label label5;
     }
 }
