@@ -63,9 +63,5 @@ namespace First_cSharp_SQL_APP
 
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
-        }
     }
 }
