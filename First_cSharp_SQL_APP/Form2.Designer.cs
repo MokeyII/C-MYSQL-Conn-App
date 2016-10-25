@@ -39,9 +39,9 @@
             this.Submit_btn = new System.Windows.Forms.Button();
             this.Proof_txt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.BanT_txt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.DLbans_txt = new System.Windows.Forms.Button();
+            this.BanT_txt = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // GUID
@@ -142,13 +142,6 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "For the Reason Please Add \"Appeal @ www.yoursitehere.com\"";
             // 
-            // BanT_txt
-            // 
-            this.BanT_txt.Location = new System.Drawing.Point(69, 30);
-            this.BanT_txt.Name = "BanT_txt";
-            this.BanT_txt.Size = new System.Drawing.Size(44, 20);
-            this.BanT_txt.TabIndex = 12;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -158,23 +151,36 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Ban Type";
             // 
-            // label7
+            // DLbans_txt
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(122, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Type \"GUID\" for now.";
+            this.DLbans_txt.Location = new System.Drawing.Point(293, 13);
+            this.DLbans_txt.Name = "DLbans_txt";
+            this.DLbans_txt.Size = new System.Drawing.Size(116, 23);
+            this.DLbans_txt.TabIndex = 15;
+            this.DLbans_txt.Text = "DL Approved Bans";
+            this.DLbans_txt.UseVisualStyleBackColor = true;
+            this.DLbans_txt.Click += new System.EventHandler(this.DLbans_txt_Click);
+            // 
+            // BanT_txt
+            // 
+            this.BanT_txt.FormattingEnabled = true;
+            this.BanT_txt.Items.AddRange(new object[] {
+            "GUID",
+            "IP Address"});
+            this.BanT_txt.Location = new System.Drawing.Point(69, 30);
+            this.BanT_txt.Name = "BanT_txt";
+            this.BanT_txt.Size = new System.Drawing.Size(208, 21);
+            this.BanT_txt.TabIndex = 16;
+            this.BanT_txt.Text = "GUID";
             // 
             // Type_txt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 354);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.BanT_txt);
+            this.Controls.Add(this.DLbans_txt);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Proof_txt);
             this.Controls.Add(this.Submit_btn);
@@ -206,8 +212,8 @@
         private System.Windows.Forms.Button Submit_btn;
         private System.Windows.Forms.TextBox Proof_txt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox BanT_txt;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button DLbans_txt;
+        private System.Windows.Forms.ComboBox BanT_txt;
     }
 }

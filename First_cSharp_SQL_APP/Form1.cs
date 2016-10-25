@@ -37,7 +37,7 @@ namespace First_cSharp_SQL_APP
                 }
                 if (count == 1)
                 {
-                    MessageBox.Show("Username and Password is correct!");
+                    MessageBox.Show("You Have Succesfully Logged Into A3W Bans Database, Please remember all of your bans are subject for review.");
                     this.Hide();
                     Type_txt f2 = new Type_txt();
                     f2.ShowDialog();

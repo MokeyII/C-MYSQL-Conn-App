@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="First_cSharp_SQL_APP.exe" size="39392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="First_cSharp_SQL_APP.exe" size="40928">
       <assemblyIdentity name="First_cSharp_SQL_APP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Aw6x+SIvpuDLZDAyV61V3MqfZIn54fvgau7JyGV9J0o=</dsig:DigestValue>
+        <dsig:DigestValue>SaAMMCCPGNf6tHffMUsbbeJqweI+R4/XvXbpcKKb7I0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -50,7 +50,6 @@ namespace First_cSharp_SQL_APP
             if (GUID_txt.Text.Length < 32)
             {
                 MessageBox.Show("Invalid GUID");
-                return;
             }
             if (Ban_txt.Text.Length < 2)
             {
@@ -70,15 +69,25 @@ namespace First_cSharp_SQL_APP
             else
                 try
                 {
-                    MessageBox.Show("You are now Submitting a Global Ban. Falsified Bans will result in your removal of this tool!");
-                    conDataBase.Open();
-                    myReader = cmdDataBase.ExecuteReader();
-                    MessageBox.Show("Ban Submitted and Applied!");
-                    while (myReader.Read())
+                    string str1 = "Banning this Player may result in the player NOT being able to play on many servers!@@If Bans are falsified, your user and all bans applied by you are subject to be removed from the database which will result in all bans being removed from any server using this tool.@@Are you sure you want to do this?";
+                    str1 = str1.Replace("@", " " + System.Environment.NewLine);
+                    var confirmResult = MessageBox.Show(str1, "CONFIRM BAN!!", MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
                     {
+                        conDataBase.Open();
+                        myReader = cmdDataBase.ExecuteReader();
+                        MessageBox.Show("Ban Submitted and Applied!");
+                        while (myReader.Read())
+                        {
 
+                        }
+                        conDataBase.Close();
                     }
-                    conDataBase.Close();
+                        else
+                        {
+                        return;
+                        }
+                    
                 }
                 catch (Exception ex)
                 {
@@ -92,5 +101,53 @@ namespace First_cSharp_SQL_APP
             
         }
 
+        private void DLbans_txt_Click(object sender, EventArgs e)
+        {
+
+            StringBuilder sb = new StringBuilder();
+
+            try
+            {
+                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=12345";
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+                MySqlCommand SelectCommand = new MySqlCommand("select * from bans.bans order by BanType asc", myConn);
+                MySqlDataReader myReader;
+                myConn.Open();
+                myReader = SelectCommand.ExecuteReader();
+
+            
+                              
+                while (myReader.Read())
+                {
+                    string GuidStr = myReader["GUID"].ToString();
+                    string BanTimeStr = myReader["BanTime"].ToString();
+                    string ReasonjStr = myReader["Reason"].ToString();
+
+                    sb.Append(GuidStr);
+                    sb.Append(" ");
+                    sb.Append(BanTimeStr);
+                    sb.Append(" ");
+                    sb.Append(ReasonjStr);
+                    sb.AppendLine();
+                }
+
+
+                myReader.Close();
+                myConn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+            string OutputFileText = sb.ToString();
+
+        }
+
+        private void BanT_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
