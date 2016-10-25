@@ -90,7 +90,7 @@
             this.groupBox1.Controls.Add(this.username_txt);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.password_txt);
-            this.groupBox1.Location = new System.Drawing.Point(195, 285);
+            this.groupBox1.Location = new System.Drawing.Point(42, 146);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 5;
@@ -100,7 +100,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(231, 151);
+            this.pictureBox1.Location = new System.Drawing.Point(78, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(129, 128);
             this.pictureBox1.TabIndex = 6;
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 397);
+            this.ClientSize = new System.Drawing.Size(282, 259);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";

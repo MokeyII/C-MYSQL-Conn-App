@@ -38,6 +38,9 @@ namespace First_cSharp_SQL_APP
                 if (count == 1)
                 {
                     MessageBox.Show("Username and Password is correct!");
+                    this.Hide();
+                    Form2 f2 = new Form2();
+                    f2.ShowDialog();
                 }
                 else if (count > 1)
                 {
