@@ -16,6 +16,8 @@ namespace First_cSharp_SQL_APP
         public Form1()
         {
             InitializeComponent();
+            password_txt.PasswordChar = '•';
+            password_txt.MaxLength = 16;
         }
 
         private void button1_Click(object sender, EventArgs e)
