@@ -16,6 +16,8 @@ namespace First_cSharp_SQL_APP
         public Type_txt()
         {
             InitializeComponent();
+            GUID_txt.MaxLength = 32;
+            BanT_txt.MaxLength = 4;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -40,27 +42,54 @@ namespace First_cSharp_SQL_APP
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
-            try
+            if (BanT_txt.Text.Length < 4)
             {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-                MessageBox.Show("Ban Submitted and Applied!");
-                while (myReader.Read())
+                MessageBox.Show("Please enter ''GUID'' for ban type");
+                return;
+            }
+            if (GUID_txt.Text.Length < 32)
+            {
+                MessageBox.Show("Invalid GUID");
+                return;
+            }
+            if (Ban_txt.Text.Length < 2)
+            {
+                MessageBox.Show("Please enter ''-1'' under ban time to ensure a permanant ban");
+                return;
+            }
+            if (Reason_txt.Text.Length < 10)
+            {
+                MessageBox.Show("Please Enter a Valid Reason, Ensure you add your Appeal Process to the reason. I.E. ''Hacking | Appeal your ban @ www.yoursitehere.com''");
+                return;
+            }
+            if (Proof_txt.Text.Length < 10)
+            {
+                MessageBox.Show("Please Enter Valid Proof, I.E. Script Logs, Youtube Link, Sound File Link, etc...");
+                return;
+            }
+            else
+                try
                 {
-                    
-                }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                    MessageBox.Show("You are now Submitting a Global Ban. Falsified Bans will result in your removal of this tool!");
+                    conDataBase.Open();
+                    myReader = cmdDataBase.ExecuteReader();
+                    MessageBox.Show("Ban Submitted and Applied!");
+                    while (myReader.Read())
+                    {
 
+                    }
+                    conDataBase.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
         }
 
         private void GUID_txt_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
     }
