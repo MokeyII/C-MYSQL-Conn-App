@@ -39,7 +39,7 @@ namespace First_cSharp_SQL_APP
                 {
                     MessageBox.Show("Username and Password is correct!");
                     this.Hide();
-                    Form2 f2 = new Form2();
+                    Type_txt f2 = new Type_txt();
                     f2.ShowDialog();
                 }
                 else if (count > 1)

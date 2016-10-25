@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace First_cSharp_SQL_APP
 {
-    public partial class Form2 : Form
+    public partial class Type_txt : Form
     {
-        public Form2()
+        public Type_txt()
         {
             InitializeComponent();
         }
@@ -35,8 +35,8 @@ namespace First_cSharp_SQL_APP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=127.0.0.1;port=3306;username=root;password=12345";
-            string Query = "insert into bans.bans (GUID, BanTime, Reason, Proof) Values('" + this.GUID_txt.Text + "','" + this.Ban_txt.Text + "','" + this.Reason_txt.Text + "','" + this.Proof_txt.Text + "' ;";
+            string constring = "datasource=127.0.0.1;port=3306;username=root;password=12345;database=bans";
+            string Query = "insert into bans (GUID, BanTime, Reason, Proof,Bantype) Values('" + this.GUID_txt.Text + "','" + this.Ban_txt.Text + "','" + this.Reason_txt.Text + "','" + this.Proof_txt.Text + "','" + this.BanT_txt.Text + "') ;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
@@ -47,7 +47,7 @@ namespace First_cSharp_SQL_APP
                 MessageBox.Show("Ban Submitted and Applied!");
                 while (myReader.Read())
                 {
-
+                    
                 }
             }
             catch(Exception ex)
@@ -59,6 +59,11 @@ namespace First_cSharp_SQL_APP
         }
 
         private void GUID_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
 
         }

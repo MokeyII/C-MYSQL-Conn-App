@@ -1,6 +1,6 @@
 ﻿namespace First_cSharp_SQL_APP
 {
-    partial class Form2
+    partial class Type_txt
     {
         /// <summary>
         /// Required designer variable.
@@ -39,12 +39,15 @@
             this.Submit_btn = new System.Windows.Forms.Button();
             this.Proof_txt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.BanT_txt = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // GUID
             // 
             this.GUID.AutoSize = true;
-            this.GUID.Location = new System.Drawing.Point(28, 15);
+            this.GUID.Location = new System.Drawing.Point(29, 64);
             this.GUID.Name = "GUID";
             this.GUID.Size = new System.Drawing.Size(34, 13);
             this.GUID.TabIndex = 0;
@@ -54,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 55);
+            this.label1.Location = new System.Drawing.Point(12, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 1;
@@ -63,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 90);
+            this.label2.Location = new System.Drawing.Point(20, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 2;
@@ -81,7 +84,7 @@
             // 
             // GUID_txt
             // 
-            this.GUID_txt.Location = new System.Drawing.Point(69, 8);
+            this.GUID_txt.Location = new System.Drawing.Point(69, 61);
             this.GUID_txt.Name = "GUID_txt";
             this.GUID_txt.Size = new System.Drawing.Size(250, 20);
             this.GUID_txt.TabIndex = 4;
@@ -89,14 +92,14 @@
             // 
             // Ban_txt
             // 
-            this.Ban_txt.Location = new System.Drawing.Point(68, 52);
+            this.Ban_txt.Location = new System.Drawing.Point(69, 87);
             this.Ban_txt.Name = "Ban_txt";
             this.Ban_txt.Size = new System.Drawing.Size(44, 20);
             this.Ban_txt.TabIndex = 5;
             // 
             // Reason_txt
             // 
-            this.Reason_txt.Location = new System.Drawing.Point(68, 87);
+            this.Reason_txt.Location = new System.Drawing.Point(69, 125);
             this.Reason_txt.Name = "Reason_txt";
             this.Reason_txt.Size = new System.Drawing.Size(326, 20);
             this.Reason_txt.TabIndex = 6;
@@ -105,7 +108,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(119, 55);
+            this.label4.Location = new System.Drawing.Point(119, 90);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(289, 13);
             this.label4.TabIndex = 8;
@@ -133,17 +136,45 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(92, 110);
+            this.label5.Location = new System.Drawing.Point(106, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(266, 12);
             this.label5.TabIndex = 11;
             this.label5.Text = "For the Reason Please Add \"Appeal @ www.yoursitehere.com\"";
             // 
-            // Form2
+            // BanT_txt
+            // 
+            this.BanT_txt.Location = new System.Drawing.Point(69, 30);
+            this.BanT_txt.Name = "BanT_txt";
+            this.BanT_txt.Size = new System.Drawing.Size(44, 20);
+            this.BanT_txt.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Ban Type";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(122, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Type \"GUID\" for now.";
+            // 
+            // Type_txt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 354);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.BanT_txt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Proof_txt);
             this.Controls.Add(this.Submit_btn);
@@ -155,7 +186,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GUID);
-            this.Name = "Form2";
+            this.Name = "Type_txt";
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -175,5 +206,8 @@
         private System.Windows.Forms.Button Submit_btn;
         private System.Windows.Forms.TextBox Proof_txt;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox BanT_txt;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -18,4 +18,4 @@ C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\Fi
 C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.Form1.resources
 C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.Properties.Resources.resources
 C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.csproj.GenerateResource.Cache
-C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.Form2.resources
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.Type_txt.resources
