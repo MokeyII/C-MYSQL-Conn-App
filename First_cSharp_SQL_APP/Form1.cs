@@ -24,17 +24,36 @@ namespace First_cSharp_SQL_APP
             {
                 string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=12345";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
-                MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
-                myDataAdapter.SelectCommand = new MySqlCommand(" select * bans.bans ;", myConn);
-                MySqlCommandBuilder cb = new MySqlCommandBuilder(myDataAdapter);
+                MySqlCommand SelectCommand = new MySqlCommand("select * from bans.admins where Username = '" + this.username_txt.Text + "'and Password= '" + this.password_txt.Text + "' ;", myConn);
+                MySqlDataReader myReader;
                 myConn.Open();
-                MessageBox.Show("Connected!");
+                myReader = SelectCommand.ExecuteReader();
+                int count = 0;
+                while (myReader.Read())
+                {
+                    count = count + 1;
+                }
+                if (count == 1)
+                {
+                    MessageBox.Show("Username and Password is correct!");
+                }
+                else if (count > 1)
+                {
+                    MessageBox.Show("Duplicate Username and Password!");
+                }
+                else
+                    MessageBox.Show("Incorrect Username or Password!");
                 myConn.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

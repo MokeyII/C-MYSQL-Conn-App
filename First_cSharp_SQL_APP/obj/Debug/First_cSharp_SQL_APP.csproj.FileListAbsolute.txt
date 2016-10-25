@@ -8,3 +8,13 @@ C:\Users\mccla\Documents\Branch\Visual Studio\CSharp_SQL_App\First_cSharp_SQL_AP
 C:\Users\mccla\Documents\Branch\Visual Studio\CSharp_SQL_App\First_cSharp_SQL_APP\First_cSharp_SQL_APP\bin\Debug\MySql.Data.dll
 C:\Users\mccla\Documents\Branch\Visual Studio\CSharp_SQL_App\First_cSharp_SQL_APP\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.exe
 C:\Users\mccla\Documents\Branch\Visual Studio\CSharp_SQL_App\First_cSharp_SQL_APP\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.pdb
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\bin\Debug\First_cSharp_SQL_APP.exe.config
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.exe
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.pdb
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\bin\Debug\First_cSharp_SQL_APP.exe
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\bin\Debug\First_cSharp_SQL_APP.pdb
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\bin\Debug\MySql.Data.dll
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.csprojResolveAssemblyReference.cache
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.Form1.resources
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.Properties.Resources.resources
+C:\Users\mccla\Documents\Branch\MySQL_Conn_App\First_cSharp_SQL_APP\obj\Debug\First_cSharp_SQL_APP.csproj.GenerateResource.Cache
